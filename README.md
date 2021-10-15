@@ -1,1 +1,1 @@
-# dummy react app
+# dummy web app
