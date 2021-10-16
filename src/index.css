@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+input{
+    appearance: none;
+    border: none;
+    outline: none;
+    margin:20px;
+}
+
+.App{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #53565A;
+}
+form{
+    display: block;
+    position: relative;
+    border: 8px solid #ffc62a;
+    padding: 40px;
+    width: 40%;
+    border-radius: 18px;
+    font-size: 22px;
+    background-color: rgb(223, 210, 186);
+}
+
+form .form-inner .form-group input{
+    display: block;
+    width: 100%;
+    padding:10px 15px;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.form-inner h5{
+    color: rgb(134, 10, 10);;
+}
+form h1{
+    padding-bottom: 10px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+button{
+    font-size: 18px;
+    padding:6px;
+    margin: 4px;
+    width: 95px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 900;
+    background-color: thistle;
+}
+button:hover{
+    background-color: rgb(214, 130, 214);
+    transform: scale(1.1);
+}

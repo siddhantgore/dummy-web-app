@@ -13,6 +13,9 @@ function LoginForm(props) {
         <form onSubmit={submitHandler}>
             <div className="form-inner">
                 <h1>Login</h1>
+                {(props.error!=="")?(
+                    <h5>{props.error}</h5>
+                ):""}
                 <div className="form-group">
                     <label htmlFor="name">Name:</label>
                     <input type="text" name="name" id="name" onChange={e=>setDetails({...details,name:e.target.value})}/>
@@ -25,7 +28,9 @@ function LoginForm(props) {
                     <label htmlFor="password">Password:</label>
                     <input type="password" name="password" id="password"  onChange={e=>setDetails({...details,password:e.target.value})} />
                 </div>
-                <input type="submit" value="Log In" />
+                <div className="btn">
+                <button>Log In</button>
+                </div>
             </div>
         </form>
     )

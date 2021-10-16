@@ -17,17 +17,15 @@ function App() {
     }
     else{
       console.log("Please Enter Valid Data");
+      setError("Please Enter Valid Data");
     }
   }
   const Logout = () => {
     console.log("Logout");
     setUser({name:"",email:""});
+    setError("");
   }
 
-  const Submit = (e) => {
-    e.preventDefault();
-    console.log("submitted");
-  }
   return (
     <div className="App">
       {(user.email !== "") ? (
