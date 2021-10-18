@@ -10,6 +10,7 @@ function LoginForm(props) {
         props.Login(details);
     }
     return (
+        <div className="LoginForm">
         <form onSubmit={submitHandler}>
             <div className="form-inner">
                 <h1>Login</h1>
@@ -33,6 +34,7 @@ function LoginForm(props) {
                 </div>
             </div>
         </form>
+        </div>
     )
 }
 
