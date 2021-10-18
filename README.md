@@ -1,6 +1,6 @@
 # dummy web app
 
-## Current Functinalities:-
+## Current Features:-
 
 ### 1.Login
 ### 2.Logout
