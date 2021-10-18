@@ -38,6 +38,10 @@ form .form-inner .form-group input{
     border-radius: 8px;
     transition: 0.4s;
 }
+input:hover{
+    font-size:medium;
+    box-shadow: 4px 2px 4px 0.7px #7a7a7a;
+}
 .form-inner h5{
     color: rgb(134, 10, 10);;
 }
@@ -63,4 +67,11 @@ button{
 button:hover{
     background-color: rgb(214, 130, 214);
     transform: scale(1.1);
+}
+
+/* Responsiveness */
+@media (max-width: 900px){
+    form{
+    width: 100%;
+    }
 }
