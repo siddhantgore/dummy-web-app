@@ -7,14 +7,13 @@ function App() {
     email: "admin@gmail.com",
     passwd: "admin1234"
   }
-  const [user, setUser] = useState({ name: "", email: "" });
+  const [user, setUser] = useState({ name: "", email: ""});
   const [error, setError] = useState("");
 
   const Login = details => {
     console.log(details);
     if (details.email === userAdmin.email && details.password === userAdmin.passwd) {
-      console.log("Logged In");
-      setUser({ name: details.name, email: details.email });
+      setUser({ name: details.name, email: details.email});
     }
     else {
       console.log("Please Enter Valid Data");
