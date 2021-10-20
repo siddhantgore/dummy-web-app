@@ -29,17 +29,14 @@ function App() {
   return (
     <>
       <div className="App">
-        {(user.email !== "") ? (
+        {(user.email !== "" || true) ? (
           <div className="welcome">
             <div className="Navbar">
-              <Navbar />
-            </div>
+              <Navbar Logout={Logout}/>
+            </div><br/><br/><br/>
             <h1>
               Welcome , <span>{user.name}</span>
             </h1>
-            <div className="logout">
-              <button onClick={Logout}>Logout</button>
-            </div>
           </div>
         ) :
           <LoginForm Login={Login} error={error} />
