@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import LoginForm from './components/LoginForm';
 import Navbar from './components/Navbar';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
   const userAdmin = {
@@ -28,6 +33,18 @@ function App() {
 
   return (
     <>
+    <Router>
+    <Switch>
+          <Route path="/about">
+           </Route>
+          <Route exact path="/login">
+            <LoginForm/>
+          </Route>
+          <Route path="/">
+            <Navbar />
+          </Route>
+        </Switch>
+    </Router>
       <div className="App">
         {(user.email !== "" || true) ? (
           <div className="welcome">
