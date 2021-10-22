@@ -15,11 +15,13 @@ function App() {
   }
   const [user, setUser] = useState({ name: "", email: "" });
   const [error, setError] = useState("");
+  const [flag,setFlag]=useState(false);
 
   const Login = details => {
     console.log(details);
     if (details.email === userAdmin.email && details.password === userAdmin.passwd) {
       setUser({ name: details.name, email: details.email });
+      setFlag(true);
     }
     else {
       console.log("Please Enter Valid Data");
@@ -35,7 +37,7 @@ function App() {
   return (
     <>
     <div className="App">
-      {(user.email === "admin@gmail.com") ? (
+      { (flag) ? (
       <Router>
         <Switch>
           <Route exact path="/login">
