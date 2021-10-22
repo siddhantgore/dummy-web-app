@@ -6,7 +6,7 @@ function Navbar(props) {
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <a class="navbar-brand" href="/">WebApp</a>
+                <a class="navbar-brand" href="/">AppSec</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -14,13 +14,13 @@ function Navbar(props) {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="/login">Home</a>
+                            <Link class="nav-link" to="/login">Home</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Link</a>
+                            <a class="nav-link" href="/">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="/">Disabled</a>
+                            <a class="nav-link disabled" href="/about">About Us</a>
                         </li>
                         <div className="menu">
                             <li class="nav-item dropdown">
@@ -35,7 +35,7 @@ function Navbar(props) {
                                 </div>
                             </li>
                             <div className="logout">
-                                <img src={logo} alt="Logo" width="20" height="20" onClick={props.Logout}/>
+                                <img src={logo} alt="Logo" width="18" height="18" onClick={props.Logout}/>
                             </div>
                         </div>
                     </ul>

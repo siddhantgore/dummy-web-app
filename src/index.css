@@ -83,7 +83,8 @@ cursor: pointer;
 
 .menu{
     display: flex;
-    padding-left: 1050px;
+    padding-left: 1000px;
+    color: white;
 }
 
 .menu .logout{
@@ -104,4 +105,8 @@ cursor: pointer;
     .menu{
         padding-left: 0px;
     }
+}
+
+.About{
+    padding-top: 60px;
 }
