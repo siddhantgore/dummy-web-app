@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import logo from './logo.svg'
 
 function Navbar(props) {
+    const LogOut = () => {
+        props.Logout();
+    }
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -20,7 +23,7 @@ function Navbar(props) {
                             <a class="nav-link" href="/">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="/about">About Us</a>
+                            <Link class="nav-link disabled" to="/about">About Us</Link>
                         </li>
                         <div className="menu">
                             <li class="nav-item dropdown">
@@ -28,14 +31,14 @@ function Navbar(props) {
                                     My Account
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="/">Edit Account</a>
-                                    <a class="dropdown-item" href="/">My Orders</a>
-                                    <a class="dropdown-item" href="/">Cart</a>
-                                    <a class="dropdown-item" href="/">Delete Account</a>
+                                    <Link class="dropdown-item" to="/edit">Edit Account</Link>
+                                    <a class="dropdown-item disabled" href="/">My Orders</a>
+                                    <a class="dropdown-item disabled" href="/">Cart</a>
+                                    <a class="dropdown-item disabled" href="/">Delete Account</a>
                                 </div>
                             </li>
                             <div className="logout">
-                                <img src={logo} alt="Logo" width="18" height="18" onClick={props.Logout}/>
+                                <img src={logo} alt="Logo" width="18" height="18" onClick={LogOut} />
                             </div>
                         </div>
                     </ul>

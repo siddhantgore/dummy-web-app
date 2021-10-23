@@ -7,6 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import About from './components/About';
+import EditAccount from './components/EditAccount';
 
 function App() {
   const userAdmin = {
@@ -15,7 +16,7 @@ function App() {
   }
   const [user, setUser] = useState({ name: "", email: "" });
   const [error, setError] = useState("");
-  const [flag,setFlag]=useState(false);
+  const [flag,setFlag]=useState(true);
 
   const Login = details => {
     console.log(details);
@@ -37,7 +38,7 @@ function App() {
   return (
     <>
     <div className="App">
-      { (flag) ? (
+      { (user.email!=="") ? (
       <Router>
         <Switch>
           <Route exact path="/login">
@@ -46,14 +47,14 @@ function App() {
           <Route exact path="/about">
             <About />
           </Route>
+          <Route exact path="/edit">
+            <EditAccount user={user}/>
+          </Route>
         </Switch>
             <div className="welcome">
               <div className="Navbar">
                 <Navbar Logout={Logout} />
               </div>
-              <h1>
-                Welcome , <span>{user.name}</span>
-              </h1>
             </div>
             </Router>
           ) :
