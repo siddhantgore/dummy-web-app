@@ -9,7 +9,7 @@ function Navbar(props) {
     return (
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <a class="navbar-brand" href="/">AppSec</a>
+                <a class="navbar-brand" href="/">DevSec</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,7 +33,7 @@ function Navbar(props) {
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <Link class="dropdown-item" to="/edit">Edit Account</Link>
                                     <a class="dropdown-item disabled" href="/">My Orders</a>
-                                    <a class="dropdown-item disabled" href="/">Cart</a>
+                                    <a class="dropdown-item disabled" href="/">Setting</a>
                                     <a class="dropdown-item disabled" href="/">Delete Account</a>
                                 </div>
                             </li>
