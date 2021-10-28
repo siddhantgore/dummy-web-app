@@ -7,7 +7,7 @@ function LoginForm(props) {
     const submitHandler = (e) => {
         e.preventDefault();
 
-        props.Login(details);
+        props.login();
     }
     return (
         <div className="LoginForm">
@@ -30,7 +30,7 @@ function LoginForm(props) {
                     <input type="password" name="password" id="password"  onChange={e=>setDetails({...details,password:e.target.value})} />
                 </div>
                 <div className="btn">
-                <button>Log In</button>
+                <button >Log In</button>
                 </div>
             </div>
         </form>
