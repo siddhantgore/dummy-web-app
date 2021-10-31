@@ -6,8 +6,7 @@ function LoginForm(props) {
 
     const submitHandler = (e) => {
         e.preventDefault();
-
-        props.login();
+        props.login(details);
     }
     return (
         <div className="LoginForm">
