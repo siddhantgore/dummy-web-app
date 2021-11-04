@@ -20,17 +20,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #53565A;
+    background-color: #bddcfc;
 }
 .LoginForm form{
     display: block;
     position: relative;
-    border: 8px solid #ffc62a;
+    border: 8px solid #007bff;
     padding: 40px;
     width: 40%;
     border-radius: 18px;
     font-size: 22px;
-    background-color: rgb(223, 210, 186);
+    background-color: #88c1ff;
 }
 
 .LoginForm form .form-inner .form-group input{
