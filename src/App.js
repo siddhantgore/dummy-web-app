@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import About from './components/About';
 import EditAccount from './components/EditAccount';
+import Services from './components/Services';
 
 function App() {
   const userAdmin = {
@@ -48,6 +49,9 @@ function App() {
               </Route>
               <Route exact path="/about">
                 <About />
+              </Route>
+              <Route exact path="/services">
+                <Services />
               </Route>
               <Route exact path="/edit">
                 <EditAccount user={user} />

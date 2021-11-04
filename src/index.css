@@ -111,6 +111,10 @@ cursor: pointer;
     padding-top: 60px;
 }
 
+.Services{
+    padding-top: 60px;
+}
+
 .EditAccount {
     padding-top: 120px;
 }
@@ -186,3 +190,4 @@ body {
 }
 
 /* CSS End EditAccount */
+

@@ -20,7 +20,7 @@ function Navbar(props) {
                             <Link class="nav-link" to="/login">Home</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Services</a>
+                            <Link class="nav-link" to="/services">Services</Link>
                         </li>
                         <li class="nav-item">
                             <Link class="nav-link disabled" to="/about">About Us</Link>
